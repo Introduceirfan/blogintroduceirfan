@@ -1,0 +1,31 @@
+.postCard {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.postCard:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.postLink {
+  border-bottom: none !important;
+}
+
+.postLink:hover {
+  border-bottom: none !important;
+}
+
+.postTitle {
+  font-size: var(--fs-heading);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  transition: color 0.2s ease;
+}
+
+.postLink:hover .postTitle {
+  color: var(--text-secondary);
+}
+
+.postMeta {
+  margin-top: var(--space-xs);
+}
