@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav className={styles.nav}>
             
             <Link href="/" className={styles.brand}>
-                <Image src="/notion_blogdef_light.png" alt="Logo" width={32} height={32} className={styles.avatar} />
+                <Image src="/notion_blogdef_light.png" alt="Logo" width={100} height={100} className={styles.avatar} />
                 <span className={styles.blogTitle}> Blog Irfan </span>
             </Link>
 

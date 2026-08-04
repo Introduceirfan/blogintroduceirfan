@@ -29,3 +29,10 @@
 .postMeta {
   margin-top: var(--space-xs);
 }
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-xl) 20px;
+  padding-top: var(--space-lg);
+}

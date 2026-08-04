@@ -8,7 +8,7 @@ export default function Home() {
   const posts = getAllPosts();
 
   return (
-    <div>
+    <div className={styles.container}>
       {posts.map((post) => (
         <article key={post.slug} className={styles.postCard}>
           <Link href={`/blog/${post.slug}`} className={styles.postLink}>

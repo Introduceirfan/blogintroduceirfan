@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── CSS Variables ─── */
 :root {
   --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
@@ -21,33 +26,36 @@
   --space-xl: 48px;
 
   --container-width: 680px;
-}
 
-/* Light Theme (default) */
-:root {
-  --bg-color: #ffffff;
-  --text-primary: #111111;
-  --text-secondary: #666666;
+  /* Light Theme — sama kayak personal web lo */
+  --bg-color: #fafafa;
+  --bg-card: #ffffff;
+  --text-primary: #0a0a0a;
+  --text-secondary: #3f3f3f;
+  --text-tertiary: #666666;
+  --text-muted: #999999;
   --border-color: #e5e5e5;
+  --border-strong: #cccccc;
   --link-hover: #000000;
 }
 
-/* Dark Theme */
+/* Dark Theme — sama kayak personal web lo */
 .dark {
-  --bg-color: #0d0d0e;
+  --bg-color: #0a0a0a;
+  --bg-card: #141414;
   --text-primary: #ededed;
-  --text-secondary: #888888;
-  --border-color: #222222;
+  --text-secondary: #c0c0c0;
+  --text-tertiary: #888888;
+  --text-muted: #3f3f3f;
+  --border-color: #1f1f1f;
+  --border-strong: #3f3f3f;
   --link-hover: #ffffff;
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: 'Geist', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: var(--space-xl) 20px;
   line-height: 1.7;
   font-size: var(--fs-body);
   -webkit-font-smoothing: antialiased;
@@ -56,22 +64,22 @@ body {
 a {
   color: var(--text-primary);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 a:hover {
-  color: var(--link-hover);
-  border-bottom: 1px solid var(--text-primary);
+  opacity: 0.6;
 }
 
 .meta-text {
   font-family: var(--font-mono);
   font-size: var(--fs-meta);
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
+  letter-spacing: -0.02em;
 }
 
 .hook-text {
   font-size: var(--fs-hook);
   font-style: italic;
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
 }
