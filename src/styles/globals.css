@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  --fs-title: 1.875rem;
+  --fs-heading: 1.25rem;
+  --fs-body: 1.0625rem;
+  --fs-hook: 1rem;
+  --fs-meta: 0.875rem;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+
+  --container-width: 680px;
+}
+
+/* Light Theme (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --border-color: #e5e5e5;
+  --link-hover: #000000;
+}
+
+/* Dark Theme */
+.dark {
+  --bg-color: #0d0d0e;
+  --text-primary: #ededed;
+  --text-secondary: #888888;
+  --border-color: #222222;
+  --link-hover: #ffffff;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-xl) 20px;
+  line-height: 1.7;
+  font-size: var(--fs-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.meta-text {
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  color: var(--text-secondary);
+}
+
+.hook-text {
+  font-size: var(--fs-hook);
+  font-style: italic;
+  color: var(--text-secondary);
+}
