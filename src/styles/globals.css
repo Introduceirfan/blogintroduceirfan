@@ -27,7 +27,7 @@ html {
 
   --container-width: 680px;
 
-  /* Light Theme — sama kayak personal web lo */
+  /* light */
   --bg-color: #fafafa;
   --bg-card: #ffffff;
   --text-primary: #0a0a0a;
@@ -39,7 +39,7 @@ html {
   --link-hover: #000000;
 }
 
-/* Dark Theme — sama kayak personal web lo */
+/* Dark */
 .dark {
   --bg-color: #0a0a0a;
   --bg-card: #141414;
