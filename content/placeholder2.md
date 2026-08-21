@@ -1,8 +1,8 @@
 ---
-title: "Mulai Lagi"
-date: "2026-08-04"
-hook: "Kenapa memulai selalu terasa lebih berat dari melanjutkan?"
+title: "Menerka"
+date: "2026-08-10"
+hook: "Kumau sesuatu di dunia ini tapi apa?"
 category: "Personal"
 ---
 
-Ini isi artikel pertama gw. Placeholder dulu.
+apa ya yang ingin kamu tulis disini?

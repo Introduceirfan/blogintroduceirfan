@@ -1,8 +1,8 @@
 ---
-title: "Mulai Lagi"
-date: "2026-08-04"
-hook: "Kenapa memulai selalu terasa lebih berat dari melanjutkan?"
+title: "titik balik"
+date: "2026-08-09"
+hook: "Kenapa semuanya terasa melelahkan ketika sendirian?"
 category: "Personal"
 ---
 
-Ini isi artikel pertama gw. Placeholder dulu.
+sendirian emang melelahkan tapi ini juga bebas.

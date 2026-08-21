@@ -31,7 +31,7 @@
 }
 
 .container {
-  max-width: var(--container-width);
+  max-width: 900px;
   margin: 0 auto;
   padding: var(--space-xl) 20px;
   padding-top: var(--space-lg);
