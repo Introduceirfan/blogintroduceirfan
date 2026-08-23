@@ -19,4 +19,10 @@
 .postContent {
   margin-top: var(--space-lg);
   line-height: 1.8;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.postContent p {
+  margin-bottom: var(--space-md);
 }

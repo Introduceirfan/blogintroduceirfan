@@ -1,18 +1,19 @@
-import { Geist, Geist_Mono} from "next/font/google";
+import { Lora, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "../components/ThemeProvider";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/globals.css"
 
-const geistSans = Geist({
-    variable : "--font-geist-sans",
+const lora = Lora({
+    variable : "--font-lora",
     subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrains = JetBrains_Mono({
+  variable: "--font-jetbrains",
   subsets: ["latin"],
 });
+
 
 export const metadata = {
     title : "Blog Irfan",
@@ -22,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="id" suppressHydrationWarning>
-            <body className={`${geistSans.variable} ${geistMono.variable}`}>
+            <body className={`${lora.variable} ${jetbrains.variable}`}>
                 <ThemeProvider>
                     <Navbar />
                     <main>{children}</main>

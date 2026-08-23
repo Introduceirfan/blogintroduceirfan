@@ -37,7 +37,12 @@
 .navRight {
   display: flex;
   align-items: center;
-  gap: var(--space-md);
+  gap: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+.navLink {
+  font-size: var(--fs-hook);
 }
 
 .themeToggle {

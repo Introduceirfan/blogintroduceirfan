@@ -22,7 +22,7 @@ export default function Navbar() {
                 <span className={styles.blogTitle}> Blog Irfan </span>
             </Link>
 
-            <div className={styles.navRight}>
+            <div className={`${styles.navRight} meta-text`}>
                 {mounted && (
                     <button
                         className={styles.themeToggle}
@@ -32,8 +32,8 @@ export default function Navbar() {
                             {theme === "dark" ? "☀️" : "🌙"}
                     </button>
                 )}
-                <Link href="/archive">Archive</Link>
-                <Link href="/about">About</Link>
+                <Link href="/archive" className={styles.navLink}>Archive</Link>
+                <Link href="/about" className={styles.navLink}>About</Link>
             </div>
         </nav>
     )
