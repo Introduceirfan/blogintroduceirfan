@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import styles from "../styles/Navbar.module.css";
 
+
 export default function Navbar() {
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
@@ -28,8 +29,9 @@ export default function Navbar() {
                         className={styles.themeToggle}
                         onClick={() => setTheme(theme === "dark" ? "light": "dark")}
                         aria-label="Toggle Theme">
-
-                            {theme === "dark" ? "☀️" : "🌙"}
+                            <span className="material-icons">
+                                {theme === "dark" ? "light_mode" : "dark_mode"}
+                            </span>
                     </button>
                 )}
                 <Link href="/archive" className={styles.navLink}>Archive</Link>

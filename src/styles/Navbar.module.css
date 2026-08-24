@@ -54,6 +54,13 @@
   line-height: 1;
 }
 
+.themeToggle span {
+    transition: opacity 0.2s ease;
+}
+
+.themeToggle:active span {
+    opacity: 0;
+}
 
 @media (max-width: 1024px) {
   .nav {
