@@ -1,0 +1,51 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.tagline {
+    margin-bottom: 3rem;
+    opacity: 0.5;
+}
+
+.yearGroup {
+    margin-bottom: 2.5rem;
+}
+
+.year {
+    font-size: 0.85rem;
+    opacity: 0.4;
+    margin-bottom: 0.5rem;
+}
+
+.divider {
+    border-top: 1px solid currentColor;
+    opacity: 0.15;
+    margin-bottom: 0.75rem;
+}
+
+.entry {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.4rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+}
+
+.entry:hover {
+    opacity: 0.5;
+}
+
+.date {
+    font-family: var(--font-jetbrains);
+    font-size: 0.85rem;
+    opacity: 0.45;
+    white-space: nowrap;
+    padding-top: 1px;
+}
+
+.title {
+    font-size: 1rem;
+}
