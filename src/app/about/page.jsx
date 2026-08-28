@@ -3,23 +3,21 @@ import styles from "./page.module.css";
 export default function About() {
   return (
     <div className={styles.container}>
-      <p className={`${styles.tagline} meta-text`}>tentang gw</p>
+      <p className={`${styles.tagline} meta-text`}>Tentang saya</p>
 
       <div className={styles.section}>
-        <p>Gw Irfan</p>
+        <p>Hai semuanya, aku Irfan. Ini adalah blog ecek-ecek yang kutulis sebagai pengingat journey aja.
+          <span style={{fontStyle: "italic"}}> If you want, i can write in english too, but i need to check on my translation thou..</span>
+           Yang terpenting semoga harimu menyenangkan!
+        </p>
       </div>
 
       <div className={styles.section}>
-        <h2 className={`${styles.sectionTitle} meta-text`}>blog ini</h2>
+        <h1 className={`${styles.sectionTitle} meta-text`}> Kalau kamu kepo boleh diliat-liat nih.</h1>
         <div className={styles.divider} />
-        <p>gatau</p>
-      </div>
-
-      <div className={styles.section}>
-        <h2 className={`${styles.sectionTitle} meta-text`}> elsewhere</h2>
-        <div className={styles.divider} />
-        <a href="https://github.com/" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://twitter.com/" className={styles.link} target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://github.com/Introduceirfan" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
+        
+        <a href="https://www.instagram.com/introduceirfan/" className={styles.link} target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
     </div>
   );

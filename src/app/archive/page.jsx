@@ -40,7 +40,7 @@ export default function Archive() {
 
     return (
         <div className={styles.container}>
-            <p className={`${styles.tagline} meta-text`}>tulisan ini</p>
+            <p className={`${styles.tagline} meta-text`}>Menulis merupakan cara terbaik melepaskan pikiran.</p>
 
             {years.map((year) => (
                 <div key={year} className={styles.yearGroup}>
