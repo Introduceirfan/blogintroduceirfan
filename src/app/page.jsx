@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import styles from "./page.module.css";
-import { format } from "node:path";
+
 
 export default function Home() {
   const posts = getAllPosts();
@@ -10,20 +10,20 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {posts.map((post) => (
-        <article key={post.slug} className={styles.postCard}>
-          <Link href={`/blog/${post.slug}`} className={styles.postLink}>
+        <Link href={`/blog/${post.slug}`} key={post.slug} className={styles.postLink}>
+          <article className={styles.postCard}>
             <h2 className={styles.postTitle}>{post.title}</h2>
-          </Link>
-          {post.hook && (
-            <p className="hook-text">{post.hook}</p>
-          )}
-          <div className={styles.postMeta}>
-            <span className="meta-text">{formatDate(post.date)}</span>
-            {post.category && (
-              <span className="meta-text"> . {post.category}</span>
+            {post.hook && (
+              <p className="hook-text">{post.hook}</p>
             )}
-          </div>
-        </article>
+            <div className={styles.postMeta}>
+              <span className="meta-text">{formatDate(post.date)}</span>
+              {post.category && (
+                <span className="meta-text"> . {post.category}</span>
+              )}
+            </div>
+          </article>
+        </Link>
       ))}
     </div>
   );

@@ -2,6 +2,7 @@ import { Lora, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "../components/ThemeProvider";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
 import "../styles/globals.css"
 
 const lora = Lora({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
                     <Navbar />
                     <main>{children}</main>
                     <Footer />
+                    <BackToTop />
                 </ThemeProvider>
             </body>
         </html>

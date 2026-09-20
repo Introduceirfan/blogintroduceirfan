@@ -2,14 +2,20 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 4rem 1.5rem;
+    padding-top: 3.5rem;
 }
 
 .tagline {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     color: var(--text-primary);
     font-size: var(--fs-body);
 }
 
+.inbound {
+    color: var(--text-primary);
+    font-size: var(--fs-body);
+    margin-bottom: 1rem;
+}
 .yearGroup {
     margin-bottom: 2.5rem;
 }
@@ -36,7 +42,7 @@
 }
 
 .entry:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .date {
@@ -49,4 +55,11 @@
 
 .title {
     font-size: 1rem;
+    transition: background-color 0.2s ease;
+    padding: 0.1em 0.25em;
+    margin: -0.1em -0.25em;
+}
+
+.entry:hover .title {
+    background-color: var(--border-color);
 }

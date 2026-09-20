@@ -40,8 +40,8 @@ export default function Archive() {
 
     return (
         <div className={styles.container}>
-            <p className={`${styles.tagline} meta-text`}>Menulis merupakan cara terbaik melepaskan pikiran.</p>
-
+            <p className={`${styles.tagline} inbound-text`}>Menulis merupakan cara terbaik melepaskan pikiran.</p>
+            <p className={`${styles.inbound} inbound-text`}><span style={{fontStyle: "italic"}}>- Someone</span></p>
             {years.map((year) => (
                 <div key={year} className={styles.yearGroup}>
                     <h2 className={`${styles.year} meta-text`}>{year}</h2>

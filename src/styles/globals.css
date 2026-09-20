@@ -13,7 +13,7 @@ html {
 /* variables */
 :root {
   --font-sans: var(--font-lora), 'Lora', serif;
-  --font-mono: var(--font-lora-mono), monospace;
+  --font-mono: var(--font-jetbrains), monospace;
 
   --fs-title: 1.875rem;
   --fs-heading: 1.25rem;

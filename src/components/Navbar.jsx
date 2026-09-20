@@ -34,6 +34,7 @@ export default function Navbar() {
                             </span>
                     </button>
                 )}
+                <Link href="/" className={styles.navLink}>Home</Link>
                 <Link href="/archive" className={styles.navLink}>Archive</Link>
                 <Link href="/about" className={styles.navLink}>About</Link>
             </div>
